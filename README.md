@@ -34,10 +34,10 @@ npm install
 To run the application, use the following command (with nodemon for live reloading):
 - npm install -g nodemon    ( **If you don't have nodemon installed)*
 - nodemon start
-This will start the server and make the API available at `` http://localhost:5000.``
+This will start the server and make the API available at `` http://localhost:8000.``
 
 
 ### 4. Test the API
 You can test the file upload API using Postman or any other API testing tool:
 
-Endpoint: **POST** ``http://localhost:5000/api/upload``
+Endpoint: **POST** ``http://localhost:8000/api/upload``
