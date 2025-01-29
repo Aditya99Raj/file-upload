@@ -2,11 +2,9 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-
 if(!fs.existsSync("uploads")){
     fs.mkdirSync("uploads");
 }
-
 
 const storage = multer.diskStorage({
     destination: "uploads",
@@ -28,10 +26,8 @@ const fileFilter = (req, file, cb) => {
     } else {
       cb(new Error("Only .png, .jpg, .jpeg, and .pdf formats are allowed!"), false); // Reject if unknown file type
     }
-  };
+};
   
-
-
 
 const upload = multer({storage,fileFilter});
 
